@@ -10,19 +10,12 @@ library(ggplot2)
 library(discSurv)
 
 
-# setwd("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Paper/Boosting_NR_diffIter/figure1_auc_boxplot_TICStop////")
-# sourceCpp("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Newton's Method/testcode/Discrete_logit_NR_timevarying_interact.cpp")
-# sourceCpp("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Newton's Method/testcode/Discrete_logit_NR_timevarying_spline.cpp")
-# sourceCpp("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
+sourceCpp("Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
 
-
-sourceCpp("/home/lfluo/VariableSelection/TimeVarying/source/Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
-
-sourceCpp("/home/lfluo/VariableSelection/TimeVarying/source/Discrete_logit_NR_timevarying_interact.cpp")
-sourceCpp("/home/lfluo/VariableSelection/TimeVarying/source/Discrete_logit_NR_timevarying_spline.cpp")
+sourceCpp("Discrete_logit_NR_timevarying_interact.cpp")
+sourceCpp("Discrete_logit_NR_timevarying_spline.cpp")
 
 seed_tmp <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
-# seed_tmp <- 96
 seed_index <- seed_tmp
 
 ########################################################################################################################################################################################################################
