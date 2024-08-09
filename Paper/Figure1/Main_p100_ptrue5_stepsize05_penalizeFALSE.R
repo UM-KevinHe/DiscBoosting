@@ -1,8 +1,5 @@
 rm(list = ls())
 
-# setwd("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Paper/figure1_auc_boxplot/boosting//")
-
-
 library(mvtnorm)
 library(discSurv)
 library(matrixStats)
@@ -10,9 +7,7 @@ library(survival)
 library(Rcpp)
 library(ggplot2)
 
-sourceCpp("/home/lfluo/VariableSelection/TimeVarying/source/Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
-
-# sourceCpp("~/Dropbox (University of Michigan)/Lingfeng Research/VaraibleSelection/Discretized/Timevarying/Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
+sourceCpp("Discrete_logit_Boosting_arma_Both_constant_timevarying.cpp")
 
 
 FPFNSeSpLik=function(TrueBeta=TrueBeta,beta=beta){
